@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(https://uhdwallpapers.org/uploads/cache/693111177/photographer-takes-pictures-in-nature_400x225-mm-90.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            background-color: rgb(184, 52, 29);
+            text-align: center;
+            border-radius: 5%;
+        }
+        .userform{
+            width: content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .form{
+            margin-top: 8%;
+            margin-left: 55%;
+            background-color: rgba(250, 249, 248, 0.729);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            border-radius: 10%;
+            flex-direction: column;
+        }
+    </style>
+    <div class="form" id="afsub">
+        <form class="userform" onsubmit="event.preventDefault()">
+            <br><h1>FORM VALIDATOR</h1>
+            <label for="username">USER NAME:</label>
+            <input type="text" id="name" required><br>
+            <label for="email">EMAIL-ID:</label>
+            <input type="email" id="email" required><br>
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="phonenum" pattern="^[789][0-9]{9}$" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br>
+            <label for="conpass">Confirm Password</label>
+            <input type="password" id="conpass" required><br>
+            <button id="submit">submit</button><br>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
